@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr" manifest="cache/main.appcache">
 <head>
 	<!-- seo -->
-	<title>Resize End | Github Pages | A jQuery Plugin by Erik Nielsen</title>
-	<meta name="description" content="A jQuery plugin that allows for window resize-end event handling.">
+	<title>Transition | Github Pages | A jQuery Plugin by Erik Nielsen</title>
+	<meta name="description" content="A custom jQuery event that executes user-defined callback functions during an elements CSS transition.">
 	<meta name="robots" content="index, follow">
-	<meta name="url" content="https://nielse63.github.io/jquery.resizeend/">
+	<meta name="url" content="https://nielse63.github.io/jquery.transition/">
 
 	<!-- http settings -->
 	<meta charset="UTF-8">
@@ -21,23 +21,23 @@
 	<link href="//cdnjs.cloudflare.com" rel="dns-prefetch">
 
 	<!-- Icons -->
-	<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-touch-icon-57x57.png?_=1440042658">
-	<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-touch-icon-60x60.png?_=1440042658">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png?_=1440042658">
-	<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-touch-icon-76x76.png?_=1440042658">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png?_=1440042658">
-	<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-touch-icon-120x120.png?_=1440042658">
-	<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-touch-icon-144x144.png?_=1440042658">
-	<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-touch-icon-152x152.png?_=1440042658">
-	<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon-180x180.png?_=1440042658">
-	<link rel="icon" type="image/png" href="images/icons/favicon-32x32.png?_=1440042658" sizes="32x32">
-	<link rel="icon" type="image/png" href="images/icons/android-chrome-192x192.png?_=1440042658" sizes="192x192">
-	<link rel="icon" type="image/png" href="images/icons/favicon-96x96.png?_=1440042658" sizes="96x96">
-	<link rel="icon" type="image/png" href="images/icons/favicon-16x16.png?_=1440042658" sizes="16x16">
-	<link rel="manifest" href="manifest.json?_=1440042659">
-	<link rel="shortcut icon" href="images/icons/favicon.ico?_=1440042658">
+	<link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-touch-icon-57x57.png?_=1441088466">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-touch-icon-60x60.png?_=1441088466">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png?_=1441088466">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-touch-icon-76x76.png?_=1441088466">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png?_=1441088466">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-touch-icon-120x120.png?_=1441088466">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-touch-icon-144x144.png?_=1441088466">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-touch-icon-152x152.png?_=1441088466">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon-180x180.png?_=1441088466">
+	<link rel="icon" type="image/png" href="images/icons/favicon-32x32.png?_=1441088466" sizes="32x32">
+	<link rel="icon" type="image/png" href="images/icons/android-chrome-192x192.png?_=1441088466" sizes="192x192">
+	<link rel="icon" type="image/png" href="images/icons/favicon-96x96.png?_=1441088466" sizes="96x96">
+	<link rel="icon" type="image/png" href="images/icons/favicon-16x16.png?_=1441088466" sizes="16x16">
+	<link rel="manifest" href="manifest.json?_=1441088466">
+	<link rel="shortcut icon" href="images/icons/favicon.ico?_=1441088466">
 	<meta name="msapplication-TileColor" content="#2b5797">
-	<meta name="msapplication-TileImage" content="images/icons/mstile-144x144.png?_=1440042658">
+	<meta name="msapplication-TileImage" content="images/icons/mstile-144x144.png?_=1441088466">
 	<meta name="theme-color" content="#ffffff">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -45,51 +45,51 @@
 	<!-- copyright/author info -->
 	<meta name="copyright" content="2015 Erik Nielsen">
 	<meta name="language" content="en-US">
-	<meta name="revised" content="Mon, 31 Aug 2015 10:52:10 -0500">
+	<meta name="revised" content="Tue, 01 Sep 2015 02:17:44 -0500">
 	<meta name="author" content="Erik Nielsen, erik@312development.com">
 	<meta name="reply-to" content="erik@312development.com">
 	<link rel="me" type="text/html" href="https://plus.google.com/+ErikNielsen312Dev/about">
 	<link rel="author" type="text/html" href="https://plus.google.com/+ErikNielsen312Dev/about">
 
 	<!-- open graph/social -->
-	<meta property="og:title" content="jQuery Resize End">
-	<meta property="og:site_name" content="Resize End | Github Pages | A jQuery Plugin by Erik Nielsen">
-	<meta property="og:url" content="https://nielse63.github.io/jquery.resizeend/">
-	<meta property="og:description" content="A jQuery plugin that allows for window resize-end event handling.">
+	<meta property="og:title" content="jQuery Transition">
+	<meta property="og:site_name" content="Transition | Github Pages | A jQuery Plugin by Erik Nielsen">
+	<meta property="og:url" content="https://nielse63.github.io/jquery.transition/">
+	<meta property="og:description" content="A custom jQuery event that executes user-defined callback functions during an elements CSS transition.">
 	<meta property="fb:app_id" content="1045036275506704" />
 	<meta property="og:type" content="product">
 	<meta property="og:locale" content="en_US" />
-	<meta property="og:image" content="http://nielse63.github.io/jquery.resizeend/images/og-image.jpg?_=1439928042">
-	<meta property="og:image:secure_url" content="https://nielse63.github.io/jquery.resizeend/images/og-image.jpg?_=1439928042">
+	<meta property="og:image" content="http://nielse63.github.io/jquery.transition/images/og-image.jpg?_=1439928042">
+	<meta property="og:image:secure_url" content="https://nielse63.github.io/jquery.transition/images/og-image.jpg?_=1439928042">
 	<meta property="og:image:type" content="image/jpeg">
-	<meta property="og:image:width" content="1285">
-	<meta property="og:image:height" content="698">
-	<meta property="og:updated_time" content="1441036330">
+	<meta property="og:image:width" content="1381">
+	<meta property="og:image:height" content="687">
+	<meta property="og:updated_time" content="1441091864">
 
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@erikkylenielsen">
 	<meta name="twitter:creator" content="@erikkylenielsen">
-	<meta name="twitter:title" content="jQuery Resize End">
-	<meta name="twitter:description" content="A jQuery plugin that allows for window resize-end event handling.">
-	<meta name="twitter:image" content="https://nielse63.github.io/jquery.resizeend/images/og-image.jpg?_=1439928042">
+	<meta name="twitter:title" content="jQuery Transition">
+	<meta name="twitter:description" content="A custom jQuery event that executes user-defined callback functions during an elements CSS transition.">
+	<meta name="twitter:image" content="https://nielse63.github.io/jquery.transition/images/og-image.jpg?_=1439928042">
 
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="css/clique.min.css?_=1441036328">
-	<link rel="stylesheet" href="css/main.min.css?_=1441036328">
-	<link rel="stylesheet" href="css/prism.min.css?_=1441036328">
+	<link rel="stylesheet" href="css/clique.min.css?_=1441091861">
+	<link rel="stylesheet" href="css/main.min.css?_=1441091861">
+	<link rel="stylesheet" href="css/prism.min.css?_=1441091861">
 </head>
 <body itemscope itemtype="http://schema.org/WebApplication">
-	<meta itemprop="name" content="jquery.resizeend">
-	<meta itemprop="description" content="A jQuery plugin that allows for window resize-end event handling.">
-	<meta itemprop="url" content="https://nielse63.github.io/jquery.resizeend/">
-	<meta itemprop="image" content="https://nielse63.github.io/jquery.resizeend/images/og-image.jpg?_=1439928042">
+	<meta itemprop="name" content="jquery.transition">
+	<meta itemprop="description" content="A custom jQuery event that executes user-defined callback functions during an elements CSS transition.">
+	<meta itemprop="url" content="https://nielse63.github.io/jquery.transition/">
+	<meta itemprop="image" content="https://nielse63.github.io/jquery.transition/images/og-image.jpg?_=1439928042">
 	<meta itemprop="applicationCategory" content="DeveloperApplication">
 	<meta itemprop="applicationSubCategory" content="jQuery Plugin">
 	<meta itemprop="applicationSuite" content="The Chicago Framework">
-	<meta itemprop="downloadUrl" content="https://github.com/nielse63/jquery.resizeend/archive/0.2.1.zip">
+	<meta itemprop="downloadUrl" content="https://github.com/nielse63/jquery.transition/archive/0.1.0.zip">
 	<meta itemprop="fileFormat" content="application/zip">
-	<meta itemprop="fileSize" content="12 KB">
-	<meta itemprop="softwareVersion" content="0.2.1">
+	<meta itemprop="fileSize" content="90 KB">
+	<meta itemprop="softwareVersion" content="0.1.0">
 	<span class="hidden" itemprop="author" itemscope itemtype="http://schema.org/Person">
 		<meta itemprop="name" content="Erik Nielsen">
 		<meta itemprop="familyName" content="Nielsen">
@@ -115,10 +115,10 @@
 		<meta itemprop="jobTitle" content="JavaScript Engineer">
 		<meta itemprop="email" content="erik@312development.com">
 	</span>
-	<meta itemprop="dateCreated" content="2013-10-30T12:46:42-5:00">
-	<meta itemprop="dateModified" content="2015-08-31T10:52:10-05:00">
-	<meta itemprop="datePublished" content="2013-10-30T12:46:42-5:00">
-	<meta itemprop="discussionUrl" content="https://github.com/nielse63/jquery.resizeend/issues">
+	<meta itemprop="dateCreated" content="2015-09-01T00:15:41-5:00">
+	<meta itemprop="dateModified" content="2015-09-01T02:17:44-05:00">
+	<meta itemprop="datePublished" content="2015-09-01T00:15:41-5:00">
+	<meta itemprop="discussionUrl" content="https://github.com/nielse63/jquery.transition/issues">
 	<meta itemprop="license" content="http://opensource.org/licenses/MIT">
 	<span class="hidden" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
 		<meta itemprop="name" content="312 Development">
@@ -128,21 +128,21 @@
 			<span itemprop="addressRegion">IL</span>
 		</span>
 	</span>
-	<meta itemprop="version" content="0.2.1">
+	<meta itemprop="version" content="0.1.0">
 	<meta itemprop="operatingSystem" content="Windows 7, OSX 10.6, Android 1.6, iOS 8.0">
 
 	<main class="main">
 		<header class="header">
 			<div class="header-cover"></div>
 			<div class="header-center">
-				<h1 itemprop="name">ResizeEnd</h1>
+				<h1 itemprop="name">Transition</h1>
 				<h2 itemprop="description">A Custom jQuery Event</h2>
 				<div class="row row-2-cols">
 					<div class="col">
-						<a href="https://github.com/nielse63/jquery.resizeend/archive/0.2.1.zip" class="button button-block" itemprop="potentialAction" onclick="ga('send', 'event', { eventCategory: 'Download', eventAction: 'Button', eventLabel: 'Clicked'});">Download v.0.2.1 <i class="icon icon-download"></i></a>
+						<a href="https://github.com/nielse63/jquery.transition/archive/0.1.0.zip" class="button button-block" itemprop="potentialAction">Download v.0.1.0 <i class="icon icon-download"></i></a>
 					</div>
 					<div class="col">
-						<a href="https://github.com/nielse63/jquery.resizeend/" class="button button-block" itemprop="potentialAction" onclick="ga('send', 'event', { eventCategory: 'View Source', eventAction: 'Button', eventLabel: 'Clicked'});">View Source <i class="icon icon-embed2"></i></a>
+						<a href="https://github.com/nielse63/jquery.transition/" class="button button-block" itemprop="potentialAction">View Source <i class="icon icon-embed2"></i></a>
 					</div>
 				</div>
 			</div>
@@ -153,12 +153,19 @@
 					<div class="hidden-small col-4-12-small flex">
 						<aside class="aside flex-item-grow">
 							<div class="aside-inner">
-								<h4>ResizeEnd</h4>
+								<h4>Transition</h4>
 								<ul class="nav nav-side">
 									<li class="active"><a href="#demo">Demos</a></li>
 									<li><a href="#installation">Installation</a></li>
 									<li><a href="#usage">Usage</a></li>
 									<li><a href="#options">Options</a></li>
+								</ul>
+								<h4>Other Libraries &amp; Plugins</h4>
+								<ul class="nav nav-side">
+									<li><a href="https://nielse63.github.io/Chicago" target="_blank">Chicago.js</a></li>
+									<li><a href="https://nielse63.github.io/jquery.resizeend" target="_blank">jquery.resizeend</a></li>
+									<li><a href="https://nielse63.github.io/jquery.resizestart" target="_blank">jquery.resizestart</a></li>
+									<li><a href="https://nielse63.github.io/jquery.scrollend" target="_blank">jquery.scrollend</a></li>
 								</ul>
 							</div>
 						</aside>
@@ -166,65 +173,127 @@
 					<div class="col-12-12 col-8-12-small">
 						<section class="article" id="demo">
 							<h3 class="article-title">Demo</h3>
-							<p class="article-lead">An example jQuery.resizeend in action.</p>
-							<p>Begin resizing your browser window. Event output will be displayed below.</p>
-							<div class="demo-output">
-								<pre>No event</pre>
+							<p class="article-lead">An example jquery.transition in action.</p>
+							<p>Click the button below to begin trasitioning the box. Output is displayed in the code block to the right, and in your console:</p>
+							<div class="row">
+								<div class="col-12-12 col-6-12-small">
+									<div class="row">
+										<div class="col-12-12">
+											<div class="demo-box"></div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12-12">
+											<p><button class="button demo-button">Click Me</button></p>
+										</div>
+									</div>
+								</div>
+								<div class="col-12-12 col-6-12-small">
+									<div class="demo-output">
+										<pre class="demo-pre">No event</pre>
+									</div>
+								</div>
 							</div>
 						</section>
 						<section class="article" id="installation">
 							<h3 class="article-title">Installation</h3>
 							<p class="article-lead">Manual installation</p>
 							<p>Reference the file in your project:</p>
-							<pre><code class="language-markup">&lt;script src="jquery.resizeend.js"&gt;&lt;/script&gt;</code></pre>
+							<pre><code class="language-markup">&lt;script src="jquery.transition.js"&gt;&lt;/script&gt;</code></pre>
 							<p class="article-lead">Using Bower</p>
-							<pre><code class="language-bash">bower install jquery.resizeend</code></pre>
+							<pre><code class="language-bash">bower install jquery.transition</code></pre>
 							<p class="article-lead">Using NPM</p>
-							<pre><code class="language-bash">npm install jquery.resizeend</code></pre>
+							<pre><code class="language-bash">npm install jquery.transition</code></pre>
 						</section>
 						<section class="article" id="usage">
 							<h3 class="article-title">Usage</h3>
 							<p class="article-lead">Basic usage.</p>
-							<p>Direct method reference:</p>
-							<pre><code class="language-javascript">// Default options
-$('selector').resizeend(function() {
-	// execute callback...
-});
+							<pre><code class="language-javascript">$(selector).on('transition', {
 
-// Custom options
-$('selector').resizeend(1000, function() {
-	// execute callback...
-});</code></pre>
-							<p>Event binding:</p>
-							<pre><code class="language-javascript">// Default options
-$('selector').on('resizeend', function() {
-	// execute callback...
-});
+	// options.start - This method is executed when the element
+	// begins transitioning, and is only executed once per
+	// transition property
+	// ***
+	// Parameters:
+	//   property[string] - the value of the CSS property that began to transition
+	start : function( property ) {
+		// ...
+	},
 
-// Custom options
-$('selector').on('resizeend', 1000, function() {
-	// execute callback...
+	// options.progress - This method after the element has
+	// begun transitioning, and fires every 15ms until
+	// the transition is complete.
+	// ***
+	// Parameters:
+	//   property[string] - the value of the CSS property that is currently transitioning
+	//   duration[integer] - the amount of time, in milliseconds, since the transition started
+	//   value[float|integer|string] - the current value of the CSS property currently transitioning
+	progress : function( property, duration, value ) {
+		// ...
+	},
+
+	// options.complete - This method is executed once
+	// the transition has completed.
+	// ***
+	// Parameters:
+	//   property[string] - the value of the CSS property that finished transitioning
+	complete : function( property ) {
+		// ...
+	}
+},
+
+	// Event Callback - This callback function is
+	// executed after all initial CSS transition-property
+	// values have completed their transition phase. If
+	// the event is unbound prior to that moment, this
+	// callback will never be executed.
+	// ***
+	// Parameters:
+	//   event[jQuery Event] - The default jQuery Event created during during initial setup
+	function( evt ) {
+		// ...
 });</code></pre>
 						</section>
 						<section class="article" id="options">
 							<h3 class="article-title">Options</h3>
 							<p class="article-lead">All plugin &amp; event options.</p>
+							<p>All options are set as the second parameter of the jQuery event-binding method <code>.on(...)</code>. For more info on this method, <a href="#" target="_blank">read the documentation on jQuery's website</a>.</p>
 							<div class="overflow-container hidden-small">
 								<table class="table-striped">
 									<thead>
 										<tr>
 											<th>Option</th>
 											<th>Type</th>
-											<th>Default</th>
+											<th>Params</th>
 											<th>Description</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td><code>delay</code></td>
-											<td>integer/<br>object</td>
-											<td>250</td>
-											<td>The amount of time, in millisecond, to wait after the last <em>resize</em> event was fired before triggering the event.</td>
+											<td><code>start</code></td>
+											<td>function</td>
+											<td>property [<em>string</em>]</td>
+											<td>This method is executed when the element begins transitioning, and is only executed once per transition property</td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td><code>progress</code></td>
+											<td>function</td>
+											<td>
+												<p class="text-nowrap">property [<em>string</em>]</p>
+												<p class="text-nowrap">duration [<em>integer</em>]</p>
+												<p class="text-nowrap">value [<em>float</em> | <em>integer</em> | <em>string</em>]</p>
+											</td>
+											<td>This method after the element has begun transitioning, and fires every 15ms until the transition is complete.</td>
+										</tr>
+									</tbody>
+									<tbody>
+										<tr>
+											<td><code>complete</code></td>
+											<td>function</td>
+											<td>property [<em>string</em>]</td>
+											<td>This method is executed once the transition has completed.</td>
 										</tr>
 									</tbody>
 								</table>
@@ -271,18 +340,18 @@ $('selector').on('resizeend', 1000, function() {
 	</main>
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/lib/jquery.min.js?_=1441036330"><\/script>')</script>
-	<script src="js/core/core.min.js?_=1441036330"></script>
-	<script src="js/core/browser.min.js?_=1441036330"></script>
-	<script src="js/jquery.resizeend.min.js?_=1441036330"></script>
-	<script src="js/functions.min.js?_=1441036330"></script>
-	<script src="js/prism.min.js?_=1441036330"></script>
+	<script>window.jQuery || document.write('<script src="js/lib/jquery.min.js?_=1441091864"><\/script>')</script>
+	<script src="js/core/core.min.js?_=1441091864"></script>
+	<script src="js/core/browser.min.js?_=1441091864"></script>
+	<script src="js/jquery.transition.min.js?_=1441091864"></script>
+	<script src="js/functions.min.js?_=1441091864"></script>
+	<script src="js/prism.min.js?_=1441091864"></script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		ga('create', 'UA-66367751-1', 'auto');
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-66367751-6', 'auto');
 		ga('send', 'pageview');
 	</script>
 </body>

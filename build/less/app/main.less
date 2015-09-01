@@ -165,6 +165,84 @@ h4 {
 	letter-spacing: 1px;
 }
 
+td {
+	em {
+		color: #d05;
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
+.text-nowrap {
+	white-space: nowrap;
+}
+
+.button {
+	background-color: @color-primary-background;
+	font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    height: 48px;
+    line-height: 46 / 16;
+    display: block;
+    width: 100%;
+
+	&,
+	&:hover,
+	&:focus,
+	&:active {
+		color: @color-white;
+	}
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: darken( @color-primary-background, 8% );
+	}
+}
+
+.demo-pre {
+	height: 350px;
+
+	&-method {
+		font-weight: 700;
+	}
+
+	&-val {
+		color: #d05;
+	}
+}
+
+.demo-box {
+	background-color: @global-default-background;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	.transition( width 2000ms ease-in-out );
+	position: relative;
+
+	&:before {
+		content: '';
+		padding-top: 75%;
+		display: block;
+		border: 1px solid fade( #000, 25% );
+	}
+
+	&:after {
+		content: 'I will transition';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		.translate( -50%, -50% );
+	}
+
+	&.active {
+		width: 50%;
+	}
+}
+
 .row-2-cols {
 	> * {
 		.flex( 1 0 100% );

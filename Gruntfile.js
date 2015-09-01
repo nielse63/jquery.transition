@@ -249,7 +249,7 @@ module.exports = function(grunt) {
 		},
 		shell: {
 			build: {
-				command: 'curl -LG http://github.dev/jquery.resizeend/scripts/build.php',
+				command: 'curl -LG http://github.dev/jquery.transition/scripts/build.php',
 			}
 		}
 	});

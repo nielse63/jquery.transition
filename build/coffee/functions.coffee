@@ -51,8 +51,10 @@ do (_c = Clique)->
 				return false
 
 	_c.$html.on 'click', '.nav-side a', (e)->
-		e.preventDefault()
 		id = _c.$(@).attr 'href'
+		if id.indexOf( 'http' ) > -1
+			return
+		e.preventDefault()
 		parent = _c.$(@).parent()
 		_c.$('html, body').stop().animate
 			scrollTop : _c.$(id).offset().top
@@ -78,8 +80,38 @@ do (_c = Clique)->
 			setActiveNavbar y
 		fixedNavbar y
 
-	_c.$win.on 'resize', ->
-		_c.$('.demo-output pre').text 'Resizing'
-
-	_c.$win.on 'resizeend', ->
-		_c.$('.demo-output pre').text 'Resizing Complete!'
+	_c.$html.on 'click', '.demo-button', (e)->
+		e.preventDefault()
+		btn = _c.$(@)
+		if btn.hasClass 'disabled'
+			return
+		btn.addClass 'disabled'
+		pre = _c.$('.demo-pre')
+		_c.$('.demo-box').one 'transition', {
+			start : (prop)->
+				html = [
+					'<span class="demo-pre-method">method:</span> <span class="demo-pre-val">start</span>\n'
+					'<span class="demo-pre-method">parameters:</span> {\n\tproperty : <span class="demo-pre-val">' + prop + '</span>\n}'
+					'<hr>'
+				]
+				pre.html html.join ''
+				console.log 'start', prop
+			progress : (prop, duration, value)->
+				html = [
+					'<span class="demo-pre-method">method:</span> <span class="demo-pre-val">progress</span>\n'
+					'<span class="demo-pre-method">parameters:</span> {\n\tproperty : <span class="demo-pre-val">' + prop + '</span>\n\tduration : <span class="demo-pre-val">' + duration + '</span>\n\tvalue : <span class="demo-pre-val">' + value + '</span>\n}'
+					'<hr>'
+				]
+				pre.append html.join ''
+				console.log 'progress', prop, duration, value
+			complete : (prop)->
+				html = [
+					'<span class="demo-pre-method">method:</span> <span class="demo-pre-val">complete</span>\n'
+					'<span class="demo-pre-method">parameters:</span> {\n\tproperty : <span class="demo-pre-val">' + prop + '</span>\n}'
+				]
+				pre.append html.join ''
+				console.log 'complete', prop
+				btn.removeClass 'disabled'
+		}, ->
+			console.log 'all done'
+		_c.$('.demo-box').toggleClass 'active'
