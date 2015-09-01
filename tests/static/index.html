@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chicago Test</title>
+	<style>
+	.box {
+		position: relative;
+		height: 250px;
+		width: 250px;
+		background-color: #ddd;
+		border: 1px solid #999;
+		opacity: 0.75;
+		transition: 2000ms ease-in-out width 0ms, 1000ms ease-out opacity 250ms;
+	}
+	.box.active {
+		width: 500px;
+		opacity: 0;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="box"></div>
+
+	<script src="js/jquery.js"></script>
+	<script src="../../dist/jquery.transition.min.js"></script>
+	<script>
+		;(function($, window, document) {
+			$('.box').on('transition', {
+				start : function( property ) {
+					console.log( 'did start', property );
+				},
+				progress : function( property, duration, value ) {
+					console.log( 'progress', property, duration, value );
+				},
+				complete : function( property ) {
+					console.log( 'did end', property );
+				}
+			}, function( evt ) {
+				console.log('Event callback function:', evt);
+			});
+
+			setTimeout(function() {
+				$('.box').addClass( 'active' );
+			}, 1500);
+		})(jQuery, window, document);
+	</script>
+</body>
+</html>
