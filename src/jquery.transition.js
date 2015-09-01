@@ -190,7 +190,7 @@
 							data.complete.call( ele[0], property );
 							if( ! Object.keys( info ).length ) {
 								ele.trigger( 'transition' );
-								setTimeout(allCompleteHanlder);
+								setTimeout( allCompleteHanlder );
 							}
 							return false;
 						}

@@ -1,15 +1,15 @@
 {
-	"name": "jquery.resizeend",
-	"version": "0.2.1",
-	"homepage": "https://nielse63.github.io/jquery.resizeend/",
-	"description": "A jQuery plugin that allows for window resize-end event handling.",
-	"main": "dist/jquery.resizeend.js",
+	"name": "jquery.transition",
+	"version": "0.1.0",
+	"homepage": "https://nielse63.github.io/jquery.transition/",
+	"description": "A custom jQuery event that executes user-defined callback functions during an elements CSS transition.",
+	"main": "dist/jquery.transition.js",
 	"keywords": [
 		"jquery-plugin",
-		"resizeend",
+		"transition",
 		"jQuery",
 		"events",
-		"resize"
+		"css transition"
 	],
 	"authors": [
 		"Erik Nielsen <erik@312development.com>"
