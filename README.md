@@ -1,5 +1,7 @@
 # jquery.transition
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nielse63/jquery.transition.svg)](https://greenkeeper.io/)
+
 ##### A custom jQuery event that executes user-defined callback functions during an elements CSS transition.
 
 ***
